@@ -33,7 +33,7 @@ function App() {
             animate={{ opacity: 1, x: 0 }}
             className="text-2xl font-bold gradient-text"
           >
-            TravExTrade
+            TravExhange
           </motion.h1>
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
@@ -159,7 +159,7 @@ function App() {
                 </div>
               </div>
 
-              <div>
+      <div>
                 <label className="block text-sm text-gray-400 mb-2">Estimated Value</label>
                 <div className="bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3">
                   <div className="flex justify-between items-center">
@@ -167,11 +167,11 @@ function App() {
                     <span className="text-gray-400">NGN</span>
                   </div>
                 </div>
-              </div>
+      </div>
 
               <button className="btn btn-primary w-full">
                 Proceed to Trade
-              </button>
+        </button>
             </div>
           </motion.div>
 
@@ -197,8 +197,8 @@ function App() {
                       {crypto === 'ETH' && 'Ethereum'}
                       {crypto === 'LTC' && 'Litecoin'}
                       {crypto === 'XRP' && 'Ripple'}
-                    </p>
-                  </div>
+        </p>
+      </div>
                 </div>
                 <div className="text-right">
                   <p className="font-bold">
@@ -223,7 +223,7 @@ function App() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Why Choose TravExTrade</h2>
+          <h2 className="text-4xl font-bold mb-4">Why Choose TravExchange</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Experience the future of crypto trading with our premium features
           </p>
@@ -273,7 +273,7 @@ function App() {
         >
           <h2 className="text-4xl font-bold mb-4">What Our Traders Say</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Join thousands of satisfied users who trust TravExTrade for their crypto-to-naira needs
+            Join thousands of satisfied users who trust TravExchange for their crypto-to-naira needs
           </p>
         </motion.div>
 
@@ -290,7 +290,7 @@ function App() {
               name: "Sarah Ibrahim",
               role: "Business Owner",
               image: "https://i.pravatar.cc/150?img=5",
-              quote: "TravExTrade has transformed how I receive international payments. Excellent service!",
+              quote: "TravExchange has transformed how I receive international payments. Excellent service!",
               rating: 5
             },
             {
@@ -344,7 +344,7 @@ function App() {
               Ready to Start Trading?
             </h2>
             <p className="text-gray-400 mb-8">
-              Join thousands of traders who trust TravExTrade for their cryptocurrency transactions. 
+              Join thousands of traders who trust TravExchange for their cryptocurrency transactions. 
               Get started in minutes with our simple registration process.
             </p>
             <button className="btn btn-primary">
@@ -359,7 +359,7 @@ function App() {
         <div className="container py-12">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-2xl font-bold gradient-text mb-4">TravExTrade</h3>
+              <h3 className="text-2xl font-bold gradient-text mb-4">TravExchange</h3>
               <p className="text-gray-400 mb-4">
                 The most trusted cryptocurrency trading platform for instant naira conversion.
               </p>
@@ -408,7 +408,7 @@ function App() {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} TravExTrade. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} TravExchange. All rights reserved.</p>
           </div>
         </div>
       </footer>
