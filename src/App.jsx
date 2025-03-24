@@ -49,7 +49,7 @@ function App() {
             </div>
           </motion.div>
           {isMenuOpen && (
-            <div className="absolute top-20 right-0 md:hidden w-48 bg-dark border border-gray-700 rounded-lg p-4">
+            <div className="absolute top-28 right-0 md:hidden w-48 bg-dark border border-gray-700 rounded-lg p-4">
               <button className="btn btn-outline w-full mb-3">Sign In</button>
               <button className="btn btn-outline w-full">Get Started</button>
             </div>
