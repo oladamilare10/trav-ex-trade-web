@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaBitcoin, FaExchangeAlt, FaShieldAlt, FaEthereum, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaBitcoin, FaExchangeAlt, FaShieldAlt, FaEthereum, FaTwitter, FaInstagram, FaLinkedin, FaBars } from 'react-icons/fa';
 import { BsCurrencyExchange, BsCurrencyDollar, BsStarFill } from 'react-icons/bs';
 import { SiLitecoin, SiRipple } from 'react-icons/si';
 import { useState } from 'react';
@@ -7,7 +7,7 @@ import { useState } from 'react';
 function App() {
   const [amount, setAmount] = useState('');
   const [selectedCrypto, setSelectedCrypto] = useState('BTC');
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const cryptoPrices = {
     BTC: 32450000,
     ETH: 4500000,
@@ -40,9 +40,20 @@ function App() {
             animate={{ opacity: 1, x: 0 }}
             className="flex gap-6"
           >
-            <button className="btn btn-outline">Sign In</button>
-            <button className="btn btn-primary">Get Started</button>
+            <div className="hidden md:flex gap-4 ">
+              <button className="btn btn-outline">Sign In</button>
+              <button className="btn btn-primary">Get Started</button>
+            </div>
+            <div className="md:hidden">
+              <FaBars onClick={() => setIsMenuOpen(!isMenuOpen)} />
+            </div>
           </motion.div>
+          {isMenuOpen && (
+            <div className="absolute top-20 right-0 md:hidden w-48 bg-dark border border-gray-700 rounded-lg p-4">
+              <button className="btn btn-outline w-full mb-3">Sign In</button>
+              <button className="btn btn-outline w-full">Get Started</button>
+            </div>
+          )}
         </nav>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
